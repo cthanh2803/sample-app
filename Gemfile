@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'faker'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'will_paginate', '~> 3.3'
 gem 'bootstrap-will_paginate', '~> 1.0'
 
@@ -41,6 +43,8 @@ end
 
 group :production do
   gem 'pg'
+  gem 'fog'
+
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

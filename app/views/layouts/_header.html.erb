@@ -5,6 +5,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "Help",   help_path %></li>
+        <li>
+          <%= link_to "Log out", logout_path, method: :delete %>          <!-- ログアウトリンク-->
+        </li>
         <% if logged_in? %>                                                     <!-- ユーザーがログインしている場合の処理 -->
           <li><%= link_to "Users", '#' %></li>                                  <!-- ユーザー一覧リンク-->
           <li class="dropdown">
@@ -12,8 +15,8 @@
               Account <b class="caret"></b>
             </a>
             <ul class="dropdown-menu" >
-              <li class="dropdown-item"><%= link_to "Profile", current_user %></li>                   <!-- ログインユーザー用のプロフィールページへのリンク-->
-              <li class="dropdown-item"><%= link_to "Settings", '#' %></li>
+              <li><%= link_to "Profile", current_user %></li>                   <!-- ログインユーザー用のプロフィールページへのリンク-->
+              <li><%= link_to "Settings", '#' %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "Log out", logout_path, method: :delete %>          <!-- ログアウトリンク-->
