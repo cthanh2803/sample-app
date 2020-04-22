@@ -9,7 +9,7 @@ class PictureUploader < CarrierWave::Uploader::Base
    else
      storage :file
    end
-   
+
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
