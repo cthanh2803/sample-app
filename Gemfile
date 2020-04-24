@@ -16,8 +16,12 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'will_paginate', '~> 3.3'
 gem 'bootstrap-will_paginate', '~> 1.0'
-
+gem 'sassc'
+gem 'uglifier'
+gem 'jquery-rails'
+gem 'bootstrap'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'mysql2', '>= 0.4.4'

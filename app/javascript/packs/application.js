@@ -20,4 +20,9 @@ require("channels")
 //= require jquery
 //= require bootstrap
 //= require turbolinks
+//= require jquery_ujs
+//= require jquery.turbolinks
+//= require activestorage
 //= require_tree .
+import 'bootstrap';
+import '../stylesheets/application';
